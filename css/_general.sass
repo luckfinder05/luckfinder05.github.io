@@ -1,0 +1,572 @@
+// .container
+// 	min-width: 1200px
+
+a:hover
+	color: $button_color
+
+.nav-menu
+	position: fixed
+	z-index: 1
+	width: 100%
+	min-height: 51px
+	background-color: #212121
+	margin: none
+
+.hamburger
+	display: none
+	cursor: pointer
+.menu
+	display: flex
+	flex-wrap: wrap
+	padding: 13px 70px
+	margin: 0
+	list-style-type: none
+	align-content: center
+
+	&-item
+		border-right: 2px dotted black
+		padding-right: 28px
+		&:last-child
+			border-right: none
+
+	&-link
+		font-size: 15px
+		font-weight: 300
+		color: #ffffff
+
+	
+
+.subheader
+	width: 100%
+	min-height: 84px
+	background-color: rgba(0, 0, 0, 0.6)
+	position: absolute
+	margin-top: 51px
+
+	.call_us
+		font-size: 12px
+		font-weight: 300
+		color: #ffffff
+		margin-top: 19px
+
+	.official_partner
+		opacity: 0.5
+		font-size: 13px
+		font-weight: 100
+		color: #ffffff
+		margin-top: 6px
+
+	&-phone
+		display: block
+		font-size: 22px
+		line-height: 12px
+		font-weight: 400
+		text-transform: uppercase
+		color: #ffffff
+		margin-top: 8px
+	.xs-visible
+		display: none
+		font-size: 20px
+		font-weight: 400
+		text-transform: uppercase
+		color: #fff
+	&-logo
+		display: block
+		max-width: 100%
+		margin-top: 16px
+
+	.callback_btn
+		margin-top: 19px
+		width: 178px
+		height: 52px
+		background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%)
+		border: none
+		margin-top: 16px
+		font-size: 14px
+		font-weight: 400
+		text-transform: uppercase
+		color: #ffffff
+		border-radius: 4px
+		+btn_hover
+
+/* ==========================================================================
+
+.promo
+	text-align: center
+	background: url('../img/main.jpg') center (center / cover) no-repeat
+	min-height: 799px
+
+	/* margin-top: -84px;
+	padding-top: 217px
+	padding-bottom: 135px
+
+	&-header
+		font-size: 60px
+		font-weight: 900
+		line-height: 60px
+		text-transform: uppercase
+		color: #ffffff
+		margin: 0
+
+	&-subheader
+		font-size: 36px
+		font-weight: 700
+		line-height: 48px
+		text-transform: uppercase
+		color: #ffffff
+		margin: 0
+		margin-top: 22px
+
+	&-text
+		margin-top: 23px
+		font-family: Roboto
+		font-size: 18px
+		font-weight: 400
+		line-height: 24px
+		color: #ffffff
+
+	.send_request_btn
+		width: 265px
+		height: 69px
+		background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%)
+		border: none
+		border-radius: 4px
+		font-size: 18px
+		font-weight: 400
+		text-transform: uppercase
+		color: #ffffff
+		margin-top: 115px
+		+btn_hover
+
+/* ==========================================================================
+
+.reasons
+	/* background-color: rgba(0, 0, 0, 20%);
+	/* color: white;
+	padding-top: 71px
+	padding-bottom: 65px
+
+.label
+	width: 112px
+	height: 24px
+	background-color: #000000
+	font-size: 11px
+	font-weight: 100
+	text-transform: uppercase
+	color: #ffffff
+	margin: 0 auto
+	justify-content: center
+	align-items: center
+
+.reasons
+	&-subheader
+		font-size: 38px
+		line-height: 48px
+		font-weight: 700
+		text-transform: uppercase
+		color: #222222
+		text-align: center
+		margin-top: 38px
+
+	&-block
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap
+
+	&-item
+		max-width: 480px
+		display: flex
+		justify-content: space-around
+		align-items: flex-start
+		margin-top: 35px
+
+	&-round
+		display: flex
+		min-width: 113px
+		min-height: 113px
+		background-color: #1eacc7
+		border-radius: 50%
+		justify-content: center
+		align-items: center
+		align-self: center
+
+	&-item-text
+		margin-left: 26px
+		width: 341px
+
+	&-item-header
+		font-size: 17px
+		font-weight: 400
+		color: #1eacc7
+
+	&-item-descr		
+		font-size: 15px
+		font-weight: 300
+		color: #202020
+		text-align: justify
+
+/* ==========================================================================
+
+.mobile
+	background: url('../img/choice_bg.jpg') repeat
+	padding-bottom: 61px
+
+	&__subheader
+		padding-top: 38px
+		font-size: 38px
+		font-weight: 700
+		text-transform: uppercase
+		color: #222222
+		text-align: center
+
+	&--text
+		padding-top: 19px
+		font-size: 17px
+		font-weight: 400
+		color: #222222
+		text-align: center
+		margin-bottom: 12px
+
+	&-block
+		margin-top: 19px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		align-content: space-around
+
+	&__card
+		display: flex
+		flex-direction: column
+		align-content: center
+		justify-content: flex-start
+		padding-top: 92px
+
+		min-width: 320px;
+		min-height: 280px;
+		width: 320px
+		height: 280px
+		font-size: 24px
+		line-height: 31px
+		font-weight: 400
+		text-transform: uppercase
+		color: #ffffff
+		text-align: center
+		margin-bottom: 19px
+			
+
+	&-icon-round
+		/* margin-top: 75px;
+		display: flex
+		width: 26px
+		height: 26px
+		background-color: #000000
+		border-radius: 50%
+		justify-content: center
+		align-self: center
+		justify-self: flex-end
+
+	#card1
+		background: url('../img/mobile_1.png') center (center / cover) no-repeat
+
+	#card2
+		background: url('../img/mobile_2.png') center (center / cover) no-repeat
+
+	#card3
+		background: url('../img/mobile_3.png') center (center / cover) no-repeat
+
+	#card4
+		background: url('../img/mobile_4.png') center (center / cover) no-repeat
+
+	#card5
+		background: url('../img/mobile_5.png') center (center / cover) no-repeat
+
+	#card6
+		background: url('../img/mobile_6.png') center (center / cover) no-repeat
+
+	&__card-img
+		width: 320px
+		height: 280px
+
+/* ==========================================================================
+
+.choice
+	background: url('../img/choice_bg.jpg') repeat
+	padding-bottom: 138px
+
+	.container
+		padding-top: 57px
+		// width: 1920px
+		height: 499px
+		background-color: #070716
+
+	&-img
+		display: flex
+		justify-content: center
+		margin-top: 16px
+		img
+			width: 100%
+
+	& .label
+		background-color: #ffffff
+		font-size: 11px
+		font-weight: 100
+		text-transform: uppercase
+		color: #070716
+
+	&-header
+		margin-top: 32px
+		font-size: 38px
+		font-weight: 700
+		text-transform: uppercase
+		color: #ffffff
+		text-align: center
+
+	&-text
+		margin-top: 19px
+		font-size: 17px
+		font-weight: 400
+		color: #ffffff
+		text-align: center
+
+	&-promo-text
+		margin-top: 217px
+		font-size: 17px
+		line-height: 24px
+		font-weight: 300
+		color: #222222
+		text-align: center
+
+
+
+.conditions
+	/* background-color: rgba(0, 0, 0, 20%);
+	padding-top: 68px
+	padding-bottom: 84px
+
+	&-header
+		font-size: 38px
+		line-height: 48px
+		font-weight: 700
+		text-transform: uppercase
+		color: #222222
+		text-align: center
+		margin-top: 38px
+
+	&-container
+		margin-top: 33px
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap
+
+	&-block, .requirements-block
+		width: 489px
+
+	.conditions-list
+		margin-top: 22px
+		list-style: none
+		padding-left: 50px
+		// list-style-image: url('../ico/blue_check.png')
+
+	.requirements-list
+		list-style: none
+		padding-left: 50px
+		// list-style-image: url('../ico/red_check.png')
+
+	&-item-header
+		font-size: 22px
+		font-weight: 400
+		color: #1ca8c3
+
+	.requirements-item-header
+		font-size: 22px
+		font-weight: 400
+		color: #ff5656
+
+	&-item-conclusion
+		font-size: 17px
+		font-weight: 300
+		color: #1ca8c3
+
+	li
+		font-size: 17px
+		font-weight: 300
+		color: #222222
+		margin-top: 11px
+		position: relative
+
+		// Следующая строчка нужна при позиционировани иконки через transform
+		// display: inline-block
+		// 
+		&::before
+			content: ''
+			
+			//Позиционирование иконки через transform 
+			// display: inline-block
+			// vertical-align: middle
+			// transform: translate(-5px,-2px)
+			
+			// Вариант позиционирования иконки списка через absolute 
+			display: block
+			position: absolute
+			left: -32px 
+			top: 3px
+
+			// 
+			width: 21px
+			height: 20px
+			background: url('../ico/blue_check.png') center (center / cover) no-repeat
+
+
+	.requirements-container
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		margin-top: 62px
+		li::before
+			content: ''
+			display: block
+			position: absolute
+			left: -32px 
+			top: 3px
+			width: 21px
+			height: 20px
+			background: url('../ico/red_check.png') center (center / cover) no-repeat
+
+.all_earth
+	background-color: #080816
+
+	&-container
+		// min-width: 1440px
+		min-height: 717px
+		background: url('../img/all_earth.jpg') center (center / cover) no-repeat
+		text-align: center
+		padding-top: 49px
+
+	.label
+		width: 76px
+		height: 24px
+		background-color: #ffffff
+		font-size: 11px
+		font-weight: 100
+		text-transform: uppercase
+		color: #070716
+		// margin: 0 auto
+
+	&-header
+		font-size: 32px
+		font-weight: 700
+		text-transform: uppercase
+		color: #ffffff
+
+	&-subheader
+		margin-top: 20px
+		font-size: 17px
+		font-weight: 400
+		color: #ffffff
+
+	&-show-all
+		margin-top: 486px
+		font-size: 15px
+		font-weight: 400
+		text-transform: uppercase
+		color: #1fbad6
+
+footer
+	background-color: black
+	height: 156px
+	width: 100%
+
+.footer
+	height: 146px
+	background-color: white
+	text-align: center
+	width: 100%
+	
+	&-container
+		display: flex
+		height: 100%
+		align-items: center
+		justify-content: space-between
+
+	& .divider
+		margin: 0 auto
+		margin-top: 14px
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
+		
+		
+
+	&-left
+		display: flex
+		position: absolute
+		justify-content: center
+		align-items: center
+		margin-left: 23px
+		transform: translateY(-50%)
+
+	&-ico-round
+		width: 32px
+		height: 32px
+		background-color: #070716
+		color: white
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 9px
+
+		&:last-child
+			margin-right: 0
+	&-center
+		// display: flex
+		// justify-content: space-between
+		position: relative
+		min-width: 390px
+		margin: 0 auto
+
+	&-right
+		position: absolute
+		right: 0px
+		margin-right: 23px
+		transform: translateY(-50%)
+
+	&-main-link
+		font-size: 15px
+		font-weight: 300
+		text-transform: uppercase
+		color: #070716
+
+	&-secondary-link
+		font-size: 11px
+		font-weight: 300
+		text-transform: uppercase
+		color: #999999
+
+
+	.language
+		font-size: 11px
+		font-weight: 400
+		text-transform: uppercase
+		color: #1fbad6
+		justify-self: center
+
+
+
+
+
+// 	// Не работают из-за того, что фоном кнопки установлен градиент
+// button
+// 	transition: 0.5s all !important
+// 	&:hover
+// 		background-color: orange !important
+// 		color: red !important
+// 		&::before
+// 			content:'ТЕСТ ' !important
+// 			display: block !important
+// 			color:blue !important
+// 			transition: 1.5s all !important
+// 	&:active
+// 		background-color: green !important
+// 		color: pink !important
+
